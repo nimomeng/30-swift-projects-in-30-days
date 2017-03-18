@@ -31,6 +31,7 @@ class ViewController: UIViewController {
             make.top.equalTo(500)
             make.centerX.equalTo(self.view)
         }
+        printAllSupportedFontNames()
     }
 
     override func didReceiveMemoryWarning() {
@@ -40,6 +41,17 @@ class ViewController: UIViewController {
 
     func changeFontFamily() {
         label.font = UIFont(name: "Savoye LET", size: 17)
+    }
+    
+    func printAllSupportedFontNames() {
+        let familyNames = UIFont.familyNames
+        for familyName in familyNames {
+            print("++++++ \(familyName)")
+            let fontNames = UIFont.fontNames(forFamilyName: familyName)
+            for fontName in fontNames {
+                print("----- \(fontName)")
+            }
+        }
     }
 
 }
