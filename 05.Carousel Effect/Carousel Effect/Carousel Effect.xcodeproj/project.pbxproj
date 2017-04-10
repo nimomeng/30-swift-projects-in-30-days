@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B09C8961E9BD47F00A9527F /* CustomCollectionViewCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B09C8951E9BD47F00A9527F /* CustomCollectionViewCellModel.swift */; };
 		3B1D90CC1E9A0EEC0031B53F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1D90CB1E9A0EEC0031B53F /* AppDelegate.swift */; };
 		3B1D90CE1E9A0EEC0031B53F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1D90CD1E9A0EEC0031B53F /* ViewController.swift */; };
 		3B1D90D11E9A0EEC0031B53F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B1D90CF1E9A0EEC0031B53F /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3B09C8951E9BD47F00A9527F /* CustomCollectionViewCellModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewCellModel.swift; sourceTree = "<group>"; };
 		3B1D90C81E9A0EEC0031B53F /* Carousel Effect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Carousel Effect.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B1D90CB1E9A0EEC0031B53F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3B1D90CD1E9A0EEC0031B53F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 				3B1D90D41E9A0EEC0031B53F /* LaunchScreen.storyboard */,
 				3B1D90D71E9A0EEC0031B53F /* Info.plist */,
 				3B1D90DF1E9A6F790031B53F /* CustomCollectionViewLayout.swift */,
+				3B09C8951E9BD47F00A9527F /* CustomCollectionViewCellModel.swift */,
 			);
 			path = "Carousel Effect";
 			sourceTree = "<group>";
@@ -142,6 +145,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B09C8961E9BD47F00A9527F /* CustomCollectionViewCellModel.swift in Sources */,
 				3B1D90CE1E9A0EEC0031B53F /* ViewController.swift in Sources */,
 				3B1D90DE1E9A64610031B53F /* CustomCollectionViewCell.swift in Sources */,
 				3B1D90E01E9A6F790031B53F /* CustomCollectionViewLayout.swift in Sources */,
@@ -307,6 +311,7 @@
 				3B1D90DC1E9A0EEC0031B53F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

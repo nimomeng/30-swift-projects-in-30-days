@@ -9,11 +9,14 @@
 import UIKit
 
 class CustomCollectionViewCell: UICollectionViewCell {
-    
     override init(frame: CGRect) {
         super.init(frame: frame)
-        
-        self.backgroundColor = UIColor.red
+    }
+    
+    public func configCell(model:CustomCollectionViewCellModel) {
+        let imageView = UIImageView(frame: self.bounds)
+        imageView.image = model.image
+        self.addSubview(imageView)
     }
     
     required init?(coder aDecoder: NSCoder) {
