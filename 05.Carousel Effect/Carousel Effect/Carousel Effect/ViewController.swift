@@ -14,15 +14,15 @@ class ViewController: UIViewController,UICollectionViewDelegate,UICollectionView
     var dataSource : Array<CustomCollectionViewCellModel>!
     override func viewDidLoad() {
         super.viewDidLoad()
-        let bgView = UIView(frame: self.view.bounds)
         
+        let bgView = UIView(frame: self.view.bounds)
         let bgImageView = UIImageView(frame: self.view.bounds)
         bgImageView.image = #imageLiteral(resourceName: "bg")
         bgView.addSubview(bgImageView)
         
         let blurEffect: UIBlurEffect = UIBlurEffect(style: .light)
         let blurView: UIVisualEffectView = UIVisualEffectView(effect: blurEffect)
-        blurView.frame = self.view.bounds//CGRectMake(50.0, 50.0, self.view.frame.width - 100.0, 200.0)
+        blurView.frame = self.view.bounds
         bgView.addSubview(blurView)
         
         let layout = UICollectionViewFlowLayout()
@@ -38,29 +38,44 @@ class ViewController: UIViewController,UICollectionViewDelegate,UICollectionView
         
 //        fake data input
         let model1 = CustomCollectionViewCellModel()
-        model1.comment = "1111"
         model1.image = #imageLiteral(resourceName: "Photo1")
         
         let model2 = CustomCollectionViewCellModel()
-        model2.comment = "222"
         model2.image = #imageLiteral(resourceName: "Photo2")
         
         let model3 = CustomCollectionViewCellModel()
-        model3.comment = "333"
         model3.image = #imageLiteral(resourceName: "Photo3")
         
         let model4 = CustomCollectionViewCellModel()
-        model4.comment = "444"
         model4.image = #imageLiteral(resourceName: "Photo4")
         
         let model5 = CustomCollectionViewCellModel()
-        model5.comment = "555"
         model5.image = #imageLiteral(resourceName: "Photo5")
         
         dataSource = Array(arrayLiteral: model1,model2,model3,model4,model5)
-//        var dataArray = Array<Any>()
+        
+//        for segment View
+        let segmentView = UISegmentedControl(items: ["FlowLayout","CustomLayout"])
+        let titleTextAttributes = [NSForegroundColorAttributeName : UIColor.white as AnyObject]
+        segmentView.setTitleTextAttributes(titleTextAttributes, for: UIControlState.normal)
+        segmentView.setTitleTextAttributes([NSForegroundColorAttributeName : UIColor.black as AnyObject], for: UIControlState.selected)
+        segmentView.tintColor = UIColor.white
+        segmentView.isMomentary = false
+        segmentView.frame = CGRect(x:10, y:50, width:(self.view.frame.width)-20, height:segmentView.bounds.height)
+        segmentView.selectedSegmentIndex = 0
+        segmentView.addTarget(self, action: #selector(action_segmentValueChanged(sender:)), for: UIControlEvents.valueChanged)
+        
+        self.view.addSubview(segmentView)
+        
     }
 
+    func action_segmentValueChanged(sender:UISegmentedControl) {
+        let layout = sender.selectedSegmentIndex == 0 ? UICollectionViewFlowLayout() : CustomCollectionViewLayout()
+        layout.scrollDirection = .horizontal
+        collectionView.collectionViewLayout = layout
+        
+    }
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return dataSource.count
     }
@@ -70,14 +85,14 @@ class ViewController: UIViewController,UICollectionViewDelegate,UICollectionView
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: 330, height: 540)
+        return CGSize(width: 220, height: 360)
     }
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! CustomCollectionViewCell
         cell.configCell(model: dataSource[indexPath.row])
         return cell
     }
-//    todo 实现自定义flowlayout
+    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
         return UIEdgeInsetsMake(10, 20, 10, 20)
     }

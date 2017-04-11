@@ -63,12 +63,12 @@
 				3B1D90CB1E9A0EEC0031B53F /* AppDelegate.swift */,
 				3B1D90CD1E9A0EEC0031B53F /* ViewController.swift */,
 				3B1D90DD1E9A64610031B53F /* CustomCollectionViewCell.swift */,
+				3B1D90DF1E9A6F790031B53F /* CustomCollectionViewLayout.swift */,
+				3B09C8951E9BD47F00A9527F /* CustomCollectionViewCellModel.swift */,
 				3B1D90CF1E9A0EEC0031B53F /* Main.storyboard */,
 				3B1D90D21E9A0EEC0031B53F /* Assets.xcassets */,
 				3B1D90D41E9A0EEC0031B53F /* LaunchScreen.storyboard */,
 				3B1D90D71E9A0EEC0031B53F /* Info.plist */,
-				3B1D90DF1E9A6F790031B53F /* CustomCollectionViewLayout.swift */,
-				3B09C8951E9BD47F00A9527F /* CustomCollectionViewCellModel.swift */,
 			);
 			path = "Carousel Effect";
 			sourceTree = "<group>";

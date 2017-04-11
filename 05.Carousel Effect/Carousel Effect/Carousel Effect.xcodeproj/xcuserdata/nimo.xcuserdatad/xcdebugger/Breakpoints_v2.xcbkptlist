@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Carousel Effect/ViewController.swift"
-            timestampString = "513529852.87481"
+            timestampString = "513617322.712653"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "78"
-            endingLineNumber = "78"
+            startingLineNumber = "93"
+            endingLineNumber = "93"
             landmarkName = "collectionView(_:cellForItemAt:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -26,7 +26,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Carousel Effect/ViewController.swift"
-            timestampString = "513529685.087084"
+            timestampString = "513617322.712653"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "31"
@@ -38,63 +38,15 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Carousel Effect/CustomCollectionViewLayout.swift"
-            timestampString = "513439263.703356"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "45"
-            endingLineNumber = "45"
-            landmarkName = "layoutAttributesForElements(in:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Carousel_Effect.CustomCollectionViewLayout.layoutAttributesForElements (in : __C.CGRect) -&gt; Swift.Optional&lt;Swift.Array&lt;__ObjC.UICollectionViewLayoutAttributes&gt;&gt;"
-                  moduleName = "Carousel Effect"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/nimo/Desktop/Swift%20Practise%20for%2030%20days/05.Carousel%20Effect/Carousel%20Effect/Carousel%20Effect/CustomCollectionViewLayout.swift"
-                  timestampString = "513529853.988536"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "45"
-                  endingLineNumber = "45"
-                  offsetFromSymbolStart = "54">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Carousel_Effect.CustomCollectionViewLayout.layoutAttributesForElements (in : __C.CGRect) -&gt; Swift.Optional&lt;Swift.Array&lt;__ObjC.UICollectionViewLayoutAttributes&gt;&gt;"
-                  moduleName = "Carousel Effect"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/nimo/Desktop/Swift%20Practise%20for%2030%20days/05.Carousel%20Effect/Carousel%20Effect/Carousel%20Effect/CustomCollectionViewLayout.swift"
-                  timestampString = "513529853.992056"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "45"
-                  endingLineNumber = "45"
-                  offsetFromSymbolStart = "1800">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Carousel Effect/ViewController.swift"
-            timestampString = "513529695.181705"
+            timestampString = "513617322.712653"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "65"
-            endingLineNumber = "65"
+            startingLineNumber = "80"
+            endingLineNumber = "80"
             landmarkName = "collectionView(_:numberOfItemsInSection:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -106,11 +58,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Carousel Effect/ViewController.swift"
-            timestampString = "513529696.32892"
+            timestampString = "513617322.712653"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "60"
-            endingLineNumber = "60"
+            startingLineNumber = "56"
+            endingLineNumber = "56"
             landmarkName = "viewDidLoad()"
             landmarkType = "7">
          </BreakpointContent>
@@ -122,11 +74,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Carousel Effect/ViewController.swift"
-            timestampString = "513529718.118418"
+            timestampString = "513617322.712653"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "76"
-            endingLineNumber = "76"
+            startingLineNumber = "91"
+            endingLineNumber = "91"
             landmarkName = "collectionView(_:cellForItemAt:)"
             landmarkType = "7">
          </BreakpointContent>

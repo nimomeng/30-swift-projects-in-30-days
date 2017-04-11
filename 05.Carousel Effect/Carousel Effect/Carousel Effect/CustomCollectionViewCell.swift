@@ -17,6 +17,9 @@ class CustomCollectionViewCell: UICollectionViewCell {
         let imageView = UIImageView(frame: self.bounds)
         imageView.image = model.image
         self.addSubview(imageView)
+        
+        self.layer.cornerRadius = 5
+        self.layer.masksToBounds = true
     }
     
     required init?(coder aDecoder: NSCoder) {

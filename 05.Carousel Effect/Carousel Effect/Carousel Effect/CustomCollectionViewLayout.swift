@@ -8,48 +8,54 @@
 
 import UIKit
 
-class CustomCollectionViewLayout: UICollectionViewLayout {
+class CustomCollectionViewLayout: UICollectionViewFlowLayout {
+    var itemWH:CGFloat!
+    var inset:CGFloat!
+    
+//    准备函数
+    override func prepare() {
+        super.prepare()
 
-    override func targetContentOffset(forProposedContentOffset proposedContentOffset: CGPoint, withScrollingVelocity velocity: CGPoint) -> CGPoint {
-        var targetP = super.targetContentOffset(forProposedContentOffset: proposedContentOffset, withScrollingVelocity: velocity)
-        
-        let collectionW = self.collectionView?.bounds.size.width
-        
-        let targetRect = CGRect(x: targetP.x, y: 0, width: collectionW!, height: 10000)
-        
-        let attrs = super.layoutAttributesForElements(in: targetRect)
-        
-        var minDelta : CGFloat = CGFloat(MAXFLOAT)
-        for attr in attrs! {
-            let delta : CGFloat = attr.center.x - targetP.x - (self.collectionView?.bounds.size.width)! * 0.5
-            
-            if (fabs(delta) < fabs(minDelta)) {
-                minDelta = delta;
-            }
-        }
-        
-        targetP.x += minDelta
-        
-        if (targetP.x < 0) {
-            targetP.x = 0
-        }
-        
-        return targetP
+        let collectionW = self.collectionView?.frame.size.width ;
+        self.itemSize = CGSize(width: collectionW! * 0.5, height: collectionW! * 0.6)
+        let leftRight = (collectionW! - self.itemSize.width) * 0.5;
+        self.sectionInset = UIEdgeInsetsMake(0, leftRight, 0, leftRight);
     }
     
-    override func layoutAttributesForElements(in rect: CGRect) -> [UICollectionViewLayoutAttributes]? {
-         // 设置cell尺寸 => UICollectionViewLayoutAttributes
-         // 越靠近中心点,距离越小,缩放越大
-         // 求cell与中心点距离
+//    是否实时更改bounds，更改各个cell的frame等
+    override func shouldInvalidateLayout(forBoundsChange newBounds: CGRect) -> Bool {
+        return true
+    }
+    
+//    如果需要滚动过程中停在特定的cell上，请在此给出规则
+    override func targetContentOffset(forProposedContentOffset proposedContentOffset: CGPoint, withScrollingVelocity velocity: CGPoint) -> CGPoint {
+
+        var lastRect = CGRect()
+        lastRect.size = (self.collectionView?.frame.size)!
+        lastRect.origin = proposedContentOffset;
         
-        let attrs = super.layoutAttributesForElements(in: (self.collectionView?.bounds)!)
-        
-        for attr in attrs! {
-            let delta = fabs((attr.center.x - (self.collectionView?.contentOffset.x)!) - (self.collectionView?.bounds.size.width)! * 0.5)
-            let scale = 1 - delta / ((self.collectionView?.bounds.size.width)! * 0.5) * 0.25
-            attr.transform = CGAffineTransform(scaleX: scale, y: scale)
+        let centerX = proposedContentOffset.x + (self.collectionView?.frame.size.width)! * 0.5
+        var adjustX = MAXFLOAT
+        let array = self.layoutAttributesForElements(in: lastRect)
+        for attr in array! {
+            if (abs(Float(attr.center.x - centerX)) < abs(adjustX)) {
+                adjustX = Float(attr.center.x - centerX)
+            }
         }
-            return attrs
+        return CGPoint(x: proposedContentOffset.x + CGFloat(adjustX), y: proposedContentOffset.y)
+    }
+    
+//    设置在滚动中各个cell的变化公式
+    override func layoutAttributesForElements(in rect: CGRect) -> [UICollectionViewLayoutAttributes]? {
+  
+        let newArr = super.layoutAttributesForElements(in: rect)
+        let collectionViewCenterX = (self.collectionView?.frame.size.width)! * 0.5 + (self.collectionView?.contentOffset.x)!
+        
+        for attributes in newArr! {
+            let scale = 1 - abs(attributes.center.x - collectionViewCenterX) / (self.collectionView?.frame.size.width)! * 0.5;
+            attributes.transform = CGAffineTransform(scaleX: scale, y: scale);
+        }
+        return newArr
+
     }
 }
-
