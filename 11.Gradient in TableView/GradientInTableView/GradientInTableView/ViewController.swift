@@ -57,7 +57,6 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         bgView.layer.addSublayer(gradientLayer)
         cell.addSubview(bgView)
         cell.sendSubview(toBack: bgView)
-        cell.selectionStyle = .none
         
         return cell
     }
