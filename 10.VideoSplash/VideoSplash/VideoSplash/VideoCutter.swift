@@ -22,8 +22,7 @@ public class VideoCutter: NSObject {
      @param duration Total time, video length
      */
     public func cropVideoWithUrl(videoUrl url: NSURL, startTime: CGFloat, duration: CGFloat, completion: ((_ videoPath: NSURL?, _ error: NSError?) -> Void)?) {
-        let priority = DispatchQueue.GlobalQueuePriority.default
-        DispatchQueue.global().async() { 
+        DispatchQueue.global().async() {
             let asset = AVURLAsset(url: url as URL, options: nil)
             let exportSession = AVAssetExportSession(asset: asset, presetName: "AVAssetExportPresetHighestQuality")
             let paths: NSArray = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true) as NSArray
@@ -49,11 +48,11 @@ public class VideoCutter: NSObject {
                 exportSession.exportAsynchronously { () -> Void in
                     switch exportSession.status {
                     case AVAssetExportSessionStatus.completed:
-                        completion?(exportSession.outputURL as! NSURL, nil)
+                        completion?(exportSession.outputURL as NSURL?, nil)
                     case AVAssetExportSessionStatus.failed:
-                        print("Failed: \(exportSession.error)")
+                        print("Failed: \(String(describing: exportSession.error))")
                     case AVAssetExportSessionStatus.cancelled:
-                        print("Failed: \(exportSession.error)")
+                        print("Failed: \(String(describing: exportSession.error))")
                     default:
                         print("default case")
                     }

@@ -87,7 +87,7 @@ public class VideoSplashViewController: UIViewController {
         let videoCutter = VideoCutter()
         videoCutter.cropVideoWithUrl(videoUrl: url, startTime: startTime, duration: duration) { (videoPath, error) -> Void in
             if let path = videoPath as NSURL? {
-                self.moviePlayer.player = AVPlayer(url: path as URL)//AVPlayer(URL: path as URL)
+                self.moviePlayer.player = AVPlayer(url: path as URL)
                 self.moviePlayer.player?.play()
                 self.moviePlayer.player?.volume = self.moviePlayerSoundLevel
             }
