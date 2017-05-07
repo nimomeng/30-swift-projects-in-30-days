@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "BF3DFEF48A0ADE7A70FEDE1526DF6B7B751581E2",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "620E1B29C127B2F4630B94C466C1F3A9436C6B80" : 9223372036854775807,
+    "BF3DFEF48A0ADE7A70FEDE1526DF6B7B751581E2" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "896B2B98-8197-4E6E-821B-9AD44F284CD2",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "620E1B29C127B2F4630B94C466C1F3A9436C6B80" : "",
+    "BF3DFEF48A0ADE7A70FEDE1526DF6B7B751581E2" : "30-swift-projects-in-30-days\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "ColorGradient",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "08.Color Gradient\/ColorGradient\/ColorGradient.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "gitlab.com:nimomeng\/RealTimeBus.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "620E1B29C127B2F4630B94C466C1F3A9436C6B80"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/nimomeng\/30-swift-projects-in-30-days.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "BF3DFEF48A0ADE7A70FEDE1526DF6B7B751581E2"
+    }
+  ]
+}
