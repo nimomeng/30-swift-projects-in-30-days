@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Limit Input Text Field/ViewController.swift"
+            timestampString = "515947992.474879"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "72"
+            endingLineNumber = "72"
+            landmarkName = "keyboardWillChangeFrame(note:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Limit Input Text Field/ViewController.swift"
+            timestampString = "515947992.474879"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "56"
+            endingLineNumber = "56"
+            landmarkName = "textViewDidChange(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Limit_Input_Text_Field.ViewController.textViewDidChange (__ObjC.UITextView) -&gt; ()"
+                  moduleName = "Limit Input Text Field"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nimo/Desktop/Projects/30-swift-projects-in-30-days/18.Limit%20Input%20Text%20Field/Limit%20Input%20Text%20Field/Limit%20Input%20Text%20Field/ViewController.swift"
+                  timestampString = "515947157.519196"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "55"
+                  endingLineNumber = "55"
+                  offsetFromSymbolStart = "26">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Limit_Input_Text_Field.ViewController.textViewDidChange (__ObjC.UITextView) -&gt; ()"
+                  moduleName = "Limit Input Text Field"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nimo/Desktop/Projects/30-swift-projects-in-30-days/18.Limit%20Input%20Text%20Field/Limit%20Input%20Text%20Field/Limit%20Input%20Text%20Field/ViewController.swift"
+                  timestampString = "515947157.520983"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "55"
+                  endingLineNumber = "55"
+                  offsetFromSymbolStart = "1585">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
