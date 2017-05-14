@@ -27,7 +27,8 @@ class ViewController: UIViewController {
         self.view.addSubview(bgImageView)
         
         let tapGes = UITapGestureRecognizer(target: self, action: #selector(tapAction))
-        self.view.addGestureRecognizer(tapGes)        
+        self.view.addGestureRecognizer(tapGes)
+        
     }
 
     override func didReceiveMemoryWarning() {

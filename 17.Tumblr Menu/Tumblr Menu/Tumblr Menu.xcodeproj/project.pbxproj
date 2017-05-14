@@ -10,10 +10,9 @@
 		3BDCC8361EC837B70006DCE4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BDCC8351EC837B70006DCE4 /* AppDelegate.swift */; };
 		3BDCC8381EC837B70006DCE4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BDCC8371EC837B70006DCE4 /* ViewController.swift */; };
 		3BDCC83B1EC837B70006DCE4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BDCC8391EC837B70006DCE4 /* Main.storyboard */; };
-		3BDCC83D1EC837B70006DCE4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BDCC83C1EC837B70006DCE4 /* Assets.xcassets */; };
 		3BDCC8401EC837B70006DCE4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BDCC83E1EC837B70006DCE4 /* LaunchScreen.storyboard */; };
-		3BDCC8481EC839EF0006DCE4 /* twitterBG.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3BDCC8471EC839EF0006DCE4 /* twitterBG.jpeg */; };
 		3BDCC84A1EC84A960006DCE4 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BDCC8491EC84A960006DCE4 /* CustomButton.swift */; };
+		3BDCC84C1EC856AE0006DCE4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BDCC84B1EC856AE0006DCE4 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,11 +20,10 @@
 		3BDCC8351EC837B70006DCE4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3BDCC8371EC837B70006DCE4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3BDCC83A1EC837B70006DCE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		3BDCC83C1EC837B70006DCE4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3BDCC83F1EC837B70006DCE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3BDCC8411EC837B70006DCE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3BDCC8471EC839EF0006DCE4 /* twitterBG.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = twitterBG.jpeg; sourceTree = "<group>"; };
 		3BDCC8491EC84A960006DCE4 /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		3BDCC84B1EC856AE0006DCE4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,11 +56,10 @@
 		3BDCC8341EC837B70006DCE4 /* Tumblr Menu */ = {
 			isa = PBXGroup;
 			children = (
-				3BDCC8471EC839EF0006DCE4 /* twitterBG.jpeg */,
+				3BDCC84B1EC856AE0006DCE4 /* Assets.xcassets */,
 				3BDCC8351EC837B70006DCE4 /* AppDelegate.swift */,
 				3BDCC8371EC837B70006DCE4 /* ViewController.swift */,
 				3BDCC8391EC837B70006DCE4 /* Main.storyboard */,
-				3BDCC83C1EC837B70006DCE4 /* Assets.xcassets */,
 				3BDCC83E1EC837B70006DCE4 /* LaunchScreen.storyboard */,
 				3BDCC8411EC837B70006DCE4 /* Info.plist */,
 				3BDCC8491EC84A960006DCE4 /* CustomButton.swift */,
@@ -131,8 +128,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3BDCC8401EC837B70006DCE4 /* LaunchScreen.storyboard in Resources */,
-				3BDCC83D1EC837B70006DCE4 /* Assets.xcassets in Resources */,
-				3BDCC8481EC839EF0006DCE4 /* twitterBG.jpeg in Resources */,
+				3BDCC84C1EC856AE0006DCE4 /* Assets.xcassets in Resources */,
 				3BDCC83B1EC837B70006DCE4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
