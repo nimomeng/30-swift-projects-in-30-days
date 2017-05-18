@@ -61,7 +61,7 @@ class ViewController: UIViewController {
         
         let endButton:UIButton = UIButton()
         endButton.setTitle("End", for: UIControlState.normal)
-        //        endButton.backgroundColor = UIColor.red
+//        endButton.backgroundColor = UIColor.red
         endView.addSubview(endButton)
         endButton.snp.makeConstraints { (make) in
             make.center.equalTo(endView).offset(0)
@@ -79,8 +79,10 @@ class ViewController: UIViewController {
         }
         resetButton.setTitle("Reset", for: UIControlState.normal)
         resetButton.addTarget(self, action: #selector(resetHandler), for: UIControlEvents.touchUpInside)
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(applicationWillResignActive), name: NSNotification.Name.UIApplicationWillResignActive, object: nil)
     }
-    
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -89,7 +91,8 @@ class ViewController: UIViewController {
     func startHandler(){
         self.timer = Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true) { (Timer) in
             self.lableNumber = self.lableNumber + 0.1
-            self.result.text = String(format: "%.1f", self.lableNumber)
+           
+            self.result.text = String(format: "%0.1f", self.lableNumber)
         }
         self.timer.fire()
     }
@@ -103,6 +106,30 @@ class ViewController: UIViewController {
     func resetHandler(){
         self.lableNumber = 0
         self.result.text = "0"
+    }
+    
+    @objc private func applicationWillResignActive() {
+        if timer == nil {
+            clearDefaults()
+        } else {
+            if timer.isValid {
+                saveDefaults()
+            } else {
+                clearDefaults()
+            }
+        }
+    }
+    
+    private func saveDefaults() {
+        let userDefault = UserDefaults(suiteName: "group.nimoAndHisFriend.watchDemo")
+        userDefault?.set(self.lableNumber, forKey: "lefttime")
+        userDefault?.synchronize()
+    }
+    
+    private func clearDefaults() {
+        let userDefault = UserDefaults(suiteName: "group.nimoAndHisFriend.watchDemo")
+        userDefault?.removeObject(forKey: "lefttime")
+        userDefault?.synchronize()
     }
 }
 
