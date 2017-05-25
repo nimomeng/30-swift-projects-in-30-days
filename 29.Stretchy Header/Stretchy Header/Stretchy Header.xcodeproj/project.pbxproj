@@ -414,6 +414,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "Stretchy Header/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nimomeng.and.his.friends.Stretchy-Header";
@@ -426,6 +427,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "Stretchy Header/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nimomeng.and.his.friends.Stretchy-Header";
@@ -507,6 +509,7 @@
 				3B263E9F1ED5C9AD00D92254 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3B263EA01ED5C9AD00D92254 /* Build configuration list for PBXNativeTarget "Stretchy HeaderTests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +518,7 @@
 				3B263EA21ED5C9AD00D92254 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3B263EA31ED5C9AD00D92254 /* Build configuration list for PBXNativeTarget "Stretchy HeaderUITests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +527,7 @@
 				3B263EA51ED5C9AD00D92254 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

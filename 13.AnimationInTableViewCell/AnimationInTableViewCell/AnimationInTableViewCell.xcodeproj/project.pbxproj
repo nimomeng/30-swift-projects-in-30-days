@@ -96,7 +96,6 @@
 				TargetAttributes = {
 					3BCD3A041EBDB7B800EC155A = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = 53BVK9ETZD;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -261,7 +260,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 53BVK9ETZD;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = AnimationInTableViewCell/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.nimomeng.and.his.friends.AnimationInTableViewCell;
@@ -274,7 +273,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 53BVK9ETZD;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = AnimationInTableViewCell/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.nimomeng.and.his.friends.AnimationInTableViewCell;
@@ -302,6 +301,7 @@
 				3BCD3A191EBDB7B800EC155A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

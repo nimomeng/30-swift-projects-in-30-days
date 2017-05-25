@@ -96,7 +96,6 @@
 				TargetAttributes = {
 					3BCD3A221EBDF88A00EC155A = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = 53BVK9ETZD;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -261,7 +260,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 53BVK9ETZD;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "Emoji Slot Machine/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nimomeng.and.his.friends.Emoji-Slot-Machine";
@@ -274,7 +273,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 53BVK9ETZD;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "Emoji Slot Machine/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nimomeng.and.his.friends.Emoji-Slot-Machine";
@@ -302,6 +301,7 @@
 				3BCD3A371EBDF88A00EC155A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

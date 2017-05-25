@@ -99,7 +99,6 @@
 				TargetAttributes = {
 					3BC965231ECC9A0900DE2180 = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = 53BVK9ETZD;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -265,7 +264,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 53BVK9ETZD;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = CoreDataAppDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.nimomeng.and.his.friends.CoreDataAppDemo;
@@ -278,7 +277,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 53BVK9ETZD;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = CoreDataAppDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.nimomeng.and.his.friends.CoreDataAppDemo;
@@ -306,6 +305,7 @@
 				3BC9653B1ECC9A0900DE2180 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

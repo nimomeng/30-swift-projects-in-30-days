@@ -12,8 +12,8 @@
 		3B5A29CF1EAE46CF005455EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B5A29CD1EAE46CF005455EF /* Main.storyboard */; };
 		3B5A29D11EAE46CF005455EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B5A29D01EAE46CF005455EF /* Assets.xcassets */; };
 		3B5A29D41EAE46CF005455EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B5A29D21EAE46CF005455EF /* LaunchScreen.storyboard */; };
-		3B5A29DC1EAE4CCF005455EF /* HexStringColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5A29DB1EAE4CCF005455EF /* HexStringColor.swift */; };
 		3B5A29DE1EAE4D09005455EF /* fetchSubString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5A29DD1EAE4D09005455EF /* fetchSubString.swift */; };
+		3BAAC1461ED72AD700BEB11E /* HexStringColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BAAC1451ED72AD700BEB11E /* HexStringColor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,8 +24,8 @@
 		3B5A29D01EAE46CF005455EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3B5A29D31EAE46CF005455EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3B5A29D51EAE46CF005455EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3B5A29DB1EAE4CCF005455EF /* HexStringColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HexStringColor.swift; path = ../HexStringColor.swift; sourceTree = "<group>"; };
 		3B5A29DD1EAE4D09005455EF /* fetchSubString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = fetchSubString.swift; sourceTree = "<group>"; };
+		3BAAC1451ED72AD700BEB11E /* HexStringColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HexStringColor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +58,7 @@
 		3B5A29C81EAE46CF005455EF /* ColorGradient */ = {
 			isa = PBXGroup;
 			children = (
-				3B5A29DB1EAE4CCF005455EF /* HexStringColor.swift */,
+				3BAAC1451ED72AD700BEB11E /* HexStringColor.swift */,
 				3B5A29DD1EAE4D09005455EF /* fetchSubString.swift */,
 				3B5A29C91EAE46CF005455EF /* AppDelegate.swift */,
 				3B5A29CB1EAE46CF005455EF /* ViewController.swift */,
@@ -102,7 +102,6 @@
 				TargetAttributes = {
 					3B5A29C51EAE46CF005455EF = {
 						CreatedOnToolsVersion = 8.3.1;
-						DevelopmentTeam = 53BVK9ETZD;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -144,8 +143,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B5A29CC1EAE46CF005455EF /* ViewController.swift in Sources */,
-				3B5A29DC1EAE4CCF005455EF /* HexStringColor.swift in Sources */,
 				3B5A29DE1EAE4D09005455EF /* fetchSubString.swift in Sources */,
+				3BAAC1461ED72AD700BEB11E /* HexStringColor.swift in Sources */,
 				3B5A29CA1EAE46CF005455EF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -269,7 +268,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 53BVK9ETZD;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = ColorGradient/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = nimoAndHisFriends.ColorGradient;
@@ -282,7 +281,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 53BVK9ETZD;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = ColorGradient/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = nimoAndHisFriends.ColorGradient;

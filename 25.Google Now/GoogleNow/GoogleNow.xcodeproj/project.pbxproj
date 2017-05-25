@@ -199,7 +199,6 @@
 				TargetAttributes = {
 					3B21C28C1ED13370001B4930 = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = 53BVK9ETZD;
 						ProvisioningStyle = Automatic;
 					};
 					3B21C2A01ED13370001B4930 = {
@@ -425,7 +424,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 53BVK9ETZD;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = GoogleNow/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.nimomeng.and.his.friends.GoogleNow;
@@ -438,7 +437,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 53BVK9ETZD;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = GoogleNow/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.nimomeng.and.his.friends.GoogleNow;
@@ -524,6 +523,7 @@
 				3B21C2B71ED13370001B4930 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3B21C2B81ED13370001B4930 /* Build configuration list for PBXNativeTarget "GoogleNowTests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +532,7 @@
 				3B21C2BA1ED13370001B4930 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3B21C2BB1ED13370001B4930 /* Build configuration list for PBXNativeTarget "GoogleNowUITests" */ = {
 			isa = XCConfigurationList;
@@ -540,6 +541,7 @@
 				3B21C2BD1ED13370001B4930 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

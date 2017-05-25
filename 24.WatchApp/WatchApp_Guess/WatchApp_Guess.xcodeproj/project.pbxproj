@@ -332,7 +332,6 @@
 				TargetAttributes = {
 					3B51ED451ED04AF1005A9085 = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = 53BVK9ETZD;
 						ProvisioningStyle = Automatic;
 					};
 					3B51ED591ED04AF1005A9085 = {
@@ -684,7 +683,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 53BVK9ETZD;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = WatchApp_Guess/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nimomeng.and.his.friends.WatchApp-Guess";
@@ -697,7 +696,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 53BVK9ETZD;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = WatchApp_Guess/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nimomeng.and.his.friends.WatchApp-Guess";
@@ -783,6 +782,7 @@
 				3B51ED931ED04AF1005A9085 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3B51ED951ED04AF1005A9085 /* Build configuration list for PBXNativeTarget "WatchApp_Guess WatchKit App" */ = {
 			isa = XCConfigurationList;
@@ -791,6 +791,7 @@
 				3B51ED971ED04AF1005A9085 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3B51ED991ED04AF1005A9085 /* Build configuration list for PBXNativeTarget "WatchApp_Guess" */ = {
 			isa = XCConfigurationList;
@@ -799,6 +800,7 @@
 				3B51ED9B1ED04AF1005A9085 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3B51ED9C1ED04AF1005A9085 /* Build configuration list for PBXNativeTarget "WatchApp_GuessTests" */ = {
 			isa = XCConfigurationList;
@@ -807,6 +809,7 @@
 				3B51ED9E1ED04AF1005A9085 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3B51ED9F1ED04AF1005A9085 /* Build configuration list for PBXNativeTarget "WatchApp_GuessUITests" */ = {
 			isa = XCConfigurationList;
@@ -815,6 +818,7 @@
 				3B51EDA11ED04AF1005A9085 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

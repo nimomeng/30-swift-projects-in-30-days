@@ -196,6 +196,7 @@
 				TargetAttributes = {
 					3B263EAE1ED5D73A00D92254 = {
 						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 53BVK9ETZD;
 						ProvisioningStyle = Automatic;
 					};
 					3B263EC21ED5D73B00D92254 = {
@@ -418,6 +419,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 53BVK9ETZD;
 				INFOPLIST_FILE = "Basic Animations/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nimomeng.and.his.friends.Basic-Animations";
@@ -430,6 +432,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 53BVK9ETZD;
 				INFOPLIST_FILE = "Basic Animations/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nimomeng.and.his.friends.Basic-Animations";
@@ -511,6 +514,7 @@
 				3B263ED91ED5D73B00D92254 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3B263EDA1ED5D73B00D92254 /* Build configuration list for PBXNativeTarget "Basic AnimationsTests" */ = {
 			isa = XCConfigurationList;
@@ -519,6 +523,7 @@
 				3B263EDC1ED5D73B00D92254 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3B263EDD1ED5D73B00D92254 /* Build configuration list for PBXNativeTarget "Basic AnimationsUITests" */ = {
 			isa = XCConfigurationList;
@@ -527,6 +532,7 @@
 				3B263EDF1ED5D73B00D92254 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
