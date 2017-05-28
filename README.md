@@ -1,5 +1,7 @@
 # 30-swift-projects-in-30-days
 
+For any problem, please send me the e-mail: egeg3000@126.com.
+
 Project 30 - Google Now App
 
 ![GoogleNow.gif](https://github.com/nimomeng/30-swift-projects-in-30-days/blob/master/30.Google%20Now/GoogleNow.gif)
