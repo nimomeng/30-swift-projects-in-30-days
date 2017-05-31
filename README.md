@@ -1,5 +1,7 @@
 # 30-swift-projects-in-30-days
 
+中文版移步[抓住iOS的未来 - 30天学习编写30个Swift小程序](http://www.jianshu.com/p/c6ae28964ad5)
+
 For any problem, please send me the e-mail: egeg3000@126.com.
 
 Project 30 - Google Now App
