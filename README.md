@@ -1,6 +1,6 @@
-# 30-swift-projects-in-30-days
-
 ![](https://github.com/nimomeng/30-swift-projects-in-30-days/blob/master/bannerForSwift.png)
+
+# 30-swift-projects-in-30-days
 
 中文版：[抓住iOS的未来 - 30天学习编写30个Swift小程序](http://www.jianshu.com/p/c6ae28964ad5)
 
