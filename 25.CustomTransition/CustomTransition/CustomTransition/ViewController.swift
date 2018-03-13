@@ -33,8 +33,8 @@ class ViewController: UIViewController,UICollectionViewDelegate,UICollectionView
         }
 }
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
         self.navigationController?.delegate = self
         self.navigationController?.isNavigationBarHidden = true
         collectionView.reloadData()
