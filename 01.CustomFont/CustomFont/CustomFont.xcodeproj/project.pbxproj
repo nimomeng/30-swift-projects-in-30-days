@@ -12,7 +12,6 @@
 		3B87C8AB1E7D70BE003011CD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B87C8A91E7D70BE003011CD /* Main.storyboard */; };
 		3B87C8AD1E7D70BE003011CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B87C8AC1E7D70BE003011CD /* Assets.xcassets */; };
 		3B87C8B01E7D70BE003011CD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B87C8AE1E7D70BE003011CD /* LaunchScreen.storyboard */; };
-		FEC936971D40DFFA49A3AC12 /* Pods_CustomFont.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BA8797550ED5B0337E6A3F8 /* Pods_CustomFont.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,9 +22,6 @@
 		3B87C8AC1E7D70BE003011CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3B87C8AF1E7D70BE003011CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3B87C8B11E7D70BE003011CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4BA8797550ED5B0337E6A3F8 /* Pods_CustomFont.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CustomFont.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		64E5B22149F71B9E8027E223 /* Pods-CustomFont.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CustomFont.release.xcconfig"; path = "Pods/Target Support Files/Pods-CustomFont/Pods-CustomFont.release.xcconfig"; sourceTree = "<group>"; };
-		D66D674E1E55707917F7DC1D /* Pods-CustomFont.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CustomFont.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CustomFont/Pods-CustomFont.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,7 +29,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FEC936971D40DFFA49A3AC12 /* Pods_CustomFont.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -45,8 +40,6 @@
 			children = (
 				3B87C8A41E7D70BE003011CD /* CustomFont */,
 				3B87C8A31E7D70BE003011CD /* Products */,
-				CB7AB1120FB9FED26B77EB9B /* Pods */,
-				9A427BF680B09EC9E595DE13 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,23 +64,6 @@
 			path = CustomFont;
 			sourceTree = "<group>";
 		};
-		9A427BF680B09EC9E595DE13 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				4BA8797550ED5B0337E6A3F8 /* Pods_CustomFont.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		CB7AB1120FB9FED26B77EB9B /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				D66D674E1E55707917F7DC1D /* Pods-CustomFont.debug.xcconfig */,
-				64E5B22149F71B9E8027E223 /* Pods-CustomFont.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -95,12 +71,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3B87C8B41E7D70BE003011CD /* Build configuration list for PBXNativeTarget "CustomFont" */;
 			buildPhases = (
-				1C62051089DED7A15E524CC7 /* [CP] Check Pods Manifest.lock */,
 				3B87C89E1E7D70BE003011CD /* Sources */,
 				3B87C89F1E7D70BE003011CD /* Frameworks */,
 				3B87C8A01E7D70BE003011CD /* Resources */,
-				79E371EB445DD37B74AB5856 /* [CP] Embed Pods Frameworks */,
-				E7A7A67B5B322A82DE71DFA5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -157,54 +130,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		1C62051089DED7A15E524CC7 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		79E371EB445DD37B74AB5856 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CustomFont/Pods-CustomFont-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E7A7A67B5B322A82DE71DFA5 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CustomFont/Pods-CustomFont-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3B87C89E1E7D70BE003011CD /* Sources */ = {
@@ -331,29 +256,33 @@
 		};
 		3B87C8B51E7D70BE003011CD /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D66D674E1E55707917F7DC1D /* Pods-CustomFont.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = CustomFont/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = nimoAndHisFriends.CustomFont;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
 		3B87C8B61E7D70BE003011CD /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 64E5B22149F71B9E8027E223 /* Pods-CustomFont.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = CustomFont/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = nimoAndHisFriends.CustomFont;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};

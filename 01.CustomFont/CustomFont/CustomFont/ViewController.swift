@@ -44,7 +44,7 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    func changeFontFamily() {
+    @objc func changeFontFamily() {
         label.font = UIFont(name: "Savoye LET", size: 30)
     }
     
