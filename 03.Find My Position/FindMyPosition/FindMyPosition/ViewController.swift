@@ -51,7 +51,7 @@ class ViewController: UIViewController,CLLocationManagerDelegate {
         // Dispose of any resources that can be recreated.
     }
     
-    func findMyLocation() {
+    @objc func findMyLocation() {
         locationManager.requestAlwaysAuthorization()
         locationManager.startUpdatingLocation()
     }

@@ -52,7 +52,7 @@ class ViewController: UIViewController,AVAudioPlayerDelegate {
         // Dispose of any resources that can be recreated.
     }
 
-    func playVideo() {
+    @objc func playVideo() {
         let videoUrl = URL(string: "http://down.treney.com/mov/test.mp4")
         let player = AVPlayer(url: videoUrl!)
         let playerViewController = AVPlayerViewController()
@@ -98,12 +98,12 @@ class ViewController: UIViewController,AVAudioPlayerDelegate {
         ]
     }
     
-    func playAudio() {
+   @objc func playAudio() {
         audioPlayer?.play()
         
     }
     
-    func pauseAudio() {
+    @objc func pauseAudio() {
         audioPlayer?.pause()
     }
     

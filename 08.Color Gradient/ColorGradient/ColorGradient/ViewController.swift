@@ -75,7 +75,7 @@ class ViewController: UIViewController,CAAnimationDelegate {
     }
 
     var lastY:CGFloat = 0.0, lastTotalIndex = 0, deltaOrigin = 0, indexForUp = 0
-    func handelPanGesture(sender: UIPanGestureRecognizer) {
+    @objc func handelPanGesture(sender: UIPanGestureRecognizer) {
         let velocity = sender.velocity(in: self.view)
         let tranY = sender.translation(in: self.view).y
         if lastY == 0 || tranY * lastY < 0{

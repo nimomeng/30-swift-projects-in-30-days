@@ -28,7 +28,7 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
 
     }
     
-    func pullTheRefresh() {
+    @objc func pullTheRefresh() {
         addNewElementToArray()
         refresh.endRefreshing()
         table.reloadData()

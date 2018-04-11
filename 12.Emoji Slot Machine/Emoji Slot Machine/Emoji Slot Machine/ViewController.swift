@@ -77,7 +77,7 @@ class ViewController: UIViewController,UIPickerViewDelegate,UIPickerViewDataSour
         return pickerLabel
     }
     
-    func goAction() {
+    @objc func goAction() {
         slotMachine.selectRow(Int(arc4random())%(emojiArray.count - 2) + 1, inComponent: 0, animated: true)
         slotMachine.selectRow(Int(arc4random())%(emojiArray.count - 2) + 1, inComponent: 1, animated: true)
         slotMachine.selectRow(Int(arc4random())%(emojiArray.count - 2) + 1, inComponent: 2, animated: true)
@@ -85,7 +85,7 @@ class ViewController: UIViewController,UIPickerViewDelegate,UIPickerViewDataSour
         self.judge()
     }
     
-    func longTapAction() {
+    @objc func longTapAction() {
         let result = Int(arc4random())%(emojiArray.count - 2)
         slotMachine.selectRow(result + 1, inComponent: 0, animated: true)
         slotMachine.selectRow(result + 1, inComponent: 1, animated: true)

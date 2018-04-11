@@ -60,7 +60,7 @@ class ViewController: UIViewController,UITextViewDelegate {
         allowInputNumberLabel.text = "\(140 - currentCharactorCount)"
     }
     
-    func keyboardWillChangeFrame(note: Notification) {
+    @objc func keyboardWillChangeFrame(note: Notification) {
         let duration = note.userInfo?[UIKeyboardAnimationDurationUserInfoKey] as! TimeInterval
         let endFrame = (note.userInfo?[UIKeyboardFrameEndUserInfoKey] as! NSValue).cgRectValue
         let y = endFrame.origin.y
