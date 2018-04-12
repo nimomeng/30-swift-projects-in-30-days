@@ -35,7 +35,7 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
     }
     
-    func tapAction() {
+    @objc func tapAction() {
         self.setupFunctions()
         let tapGes = UITapGestureRecognizer(target: self, action: #selector(removeBlur))
         blurView.addGestureRecognizer(tapGes)
@@ -68,31 +68,31 @@ class ViewController: UIViewController {
         self.view.addSubview(blurView)
         alphaBtn = UIButton(frame: CGRect(x: -88, y: 80, width: 88, height: 88))
         alphaBtn.setImageAndTitle(imageName: "alpha", title: "Message", type: .PositionTop, Space: 10)
-        blurView.addSubview(alphaBtn)
+        blurView.contentView.addSubview(alphaBtn)
 
         quoteBtn = UIButton(frame: CGRect(x: -88, y: 246, width: 88, height: 88))
         quoteBtn.setImageAndTitle(imageName: "Quote", title: "Quote", type: .PositionTop, Space: 10)
-        blurView.addSubview(quoteBtn)
+        blurView.contentView.addSubview(quoteBtn)
         
         chatBtn = UIButton(frame: CGRect(x: -88, y: 406, width: 88, height: 88))
         chatBtn.setImageAndTitle(imageName: "Chat", title: "Chat", type: .PositionTop, Space: 10)
         
         photoBtn = UIButton(frame: CGRect(x: self.view.frame.width + 88, y: 80, width: 88, height: 88))
         photoBtn.setImageAndTitle(imageName: "Photo", title: "Photo", type: .PositionTop, Space: 10)
-        blurView.addSubview(photoBtn)
+        blurView.contentView.addSubview(photoBtn)
         
         linkBtn = UIButton(frame: CGRect(x: self.view.frame.width + 88, y: 246, width: 88, height: 88))
         linkBtn.setImageAndTitle(imageName: "Link", title: "Link", type: .PositionTop, Space: 10)
-        blurView.addSubview(linkBtn)
+        blurView.contentView.addSubview(linkBtn)
         
         audioBtn = UIButton(frame: CGRect(x: self.view.frame.width + 88, y: 406, width: 88, height: 88))
         audioBtn.setImageAndTitle(imageName: "Audio", title: "Audio", type: .PositionTop, Space: 10)
-        blurView.addSubview(audioBtn)
+        blurView.contentView.addSubview(audioBtn)
         
-        blurView.addSubview(chatBtn)
+        blurView.contentView.addSubview(chatBtn)
     }
     
-    func removeBlur() {
+    @objc func removeBlur() {
         UIView.animate(withDuration: 0.5, delay: 0, usingSpringWithDamping: 3, initialSpringVelocity: 1, options: .allowAnimatedContent, animations: {
             self.blurView.alpha = 0
             self.alphaBtn.frame.origin.x = -88
