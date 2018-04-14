@@ -1,3 +1,5 @@
+All the codes have been updated to Swift 4.1. 
+
 ![](https://github.com/nimomeng/30-swift-projects-in-30-days/blob/master/bannerForSwift.png)
 
 # 30-swift-projects-in-30-days
