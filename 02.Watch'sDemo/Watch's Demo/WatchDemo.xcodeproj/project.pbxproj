@@ -96,6 +96,7 @@
 				TargetAttributes = {
 					3BDF60AC1E7978780063C611 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 535G834WQ8;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -258,10 +259,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 535G834WQ8;
 				INFOPLIST_FILE = WatchDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = nimoAndHisFriends.WatchDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nimomeng.and.his.friends.Limit-Input-Text-Field";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 			};
@@ -271,10 +272,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 535G834WQ8;
 				INFOPLIST_FILE = WatchDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = nimoAndHisFriends.WatchDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nimomeng.and.his.friends.Limit-Input-Text-Field";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 			};

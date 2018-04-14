@@ -87,6 +87,9 @@ class ViewController: UIViewController {
     }
     
    @objc func startHandler(){
+    if self.timer != nil {
+        self.stopHandler()
+    }
         self.timer = Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true) { (Timer) in
             self.lableNumber = self.lableNumber + 0.1
             self.result.text = String(format: "%.1f", self.lableNumber)
