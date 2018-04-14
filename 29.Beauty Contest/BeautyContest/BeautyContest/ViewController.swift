@@ -63,11 +63,11 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
     }
     
-    func likeAction() {
+    @objc func likeAction() {
         kolodaView.swipe(.right)
     }
     
-    func dislikeAction() {
+    @objc func dislikeAction() {
         kolodaView.swipe(.left)
     }
     
@@ -91,6 +91,10 @@ extension ViewController:KolodaViewDelegate {
 
 // MARK:KolodaViewDataSource
 extension ViewController:KolodaViewDataSource {
+    func kolodaSpeedThatCardShouldDrag(_ koloda: KolodaView) -> DragSpeed {
+        return .fast
+    }
+    
     func kolodaNumberOfCards(_ koloda: KolodaView) -> Int {
         return dataSource.count
     }

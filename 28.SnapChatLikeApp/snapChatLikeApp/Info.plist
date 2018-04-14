@@ -2,6 +2,8 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+    <key>NSPhotoLibraryAddUsageDescription</key>
+    <string>Our application needs permission to write photos</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleExecutable</key>
@@ -16,16 +18,16 @@
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
 	<string>1.0</string>
-    <key>NSCameraUsageDescription</key>
-    <string>PhotoMe needs the camera to take photos. </string>
-    <key>NSMicrophoneUsageDescription</key>
-    <string>PhotoMe needs the microphone to record audio with Live Photos.</string>
-    <key>NSPhotoLibraryUsageDescription</key>
-    <string>PhotoMe will save photos in the Photo Library.</string>
-    <key>CFBundleVersion</key>
+	<key>CFBundleVersion</key>
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSCameraUsageDescription</key>
+	<string>PhotoMe needs the camera to take photos. </string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>PhotoMe needs the microphone to record audio with Live Photos.</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>PhotoMe will save photos in the Photo Library.</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>

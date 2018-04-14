@@ -70,7 +70,7 @@ class ViewController: UIViewController,UIViewControllerTransitioningDelegate {
         // Dispose of any resources that can be recreated.
     }
     
-    func triggerAction() {
+    @objc func triggerAction() {
         let anotherVC = AnotherViewController()
         anotherVC.transitioningDelegate = self
         anotherVC.modalPresentationStyle = .custom

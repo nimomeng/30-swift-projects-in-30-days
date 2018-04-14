@@ -53,7 +53,7 @@ class AnotherViewController: UIViewController {
         super.didReceiveMemoryWarning()
     }
     
-    func dismissAction() {
+    @objc func dismissAction() {
         self.dismiss(animated: true, completion: nil)
     }
 }

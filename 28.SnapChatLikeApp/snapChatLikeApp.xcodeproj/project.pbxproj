@@ -273,9 +273,9 @@
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = snapChatLikeApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = nimoAndHisFriends.snapChatLikeApp;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nimomeng.and.his.friends.Limit-Input-Text-Field";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -286,9 +286,9 @@
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = snapChatLikeApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = nimoAndHisFriends.snapChatLikeApp;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nimomeng.and.his.friends.Limit-Input-Text-Field";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};

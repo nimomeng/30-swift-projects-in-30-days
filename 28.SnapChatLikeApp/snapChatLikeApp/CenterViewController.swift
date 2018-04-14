@@ -32,9 +32,10 @@ class CenterViewController: UIViewController,AVCapturePhotoCaptureDelegate {
         captureBtn.addTarget(self, action: #selector(takePhoto), for: UIControlEvents.touchUpInside)
         self.view.addSubview(captureBtn)
         
-        let device = AVCaptureDevice.defaultDevice(withMediaType: AVMediaTypeVideo)
+        let device = AVCaptureDevice.default(.builtInWideAngleCamera, for: AVMediaType.video, position: .back)
+//AVCaptureDevice.defaultDevice(withMediaType: AVMediaTypeVideo)
         do {
-            let input = try AVCaptureDeviceInput(device: device)
+            let input = try AVCaptureDeviceInput(device: device!)
             if (captureSesssion.canAddInput(input)) {
                 captureSesssion.addInput(input)
                 stillImageOutput = AVCapturePhotoOutput()
@@ -58,7 +59,7 @@ class CenterViewController: UIViewController,AVCapturePhotoCaptureDelegate {
     
 //    MARK: - Button Action
     
-    func takePhoto(_ sender: Any){
+    @objc func takePhoto(_ sender: Any){
         
 //        Animation for taking photos
         DispatchQueue.main.async { [unowned self] in

@@ -13,7 +13,6 @@
 		3B4F96911ED1DB9100B57C79 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B4F96901ED1DB9100B57C79 /* Assets.xcassets */; };
 		3B4F96941ED1DB9100B57C79 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B4F96921ED1DB9100B57C79 /* LaunchScreen.storyboard */; };
 		3B4F969C1ED1E27100B57C79 /* BeautyContestOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4F969B1ED1E27100B57C79 /* BeautyContestOverlayView.swift */; };
-		44FF3A465BCD863F8D1D9CAF /* Pods_BeautyContest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB284C4A3215D89388D93313 /* Pods_BeautyContest.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,9 +24,6 @@
 		3B4F96931ED1DB9100B57C79 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3B4F96951ED1DB9100B57C79 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3B4F969B1ED1E27100B57C79 /* BeautyContestOverlayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeautyContestOverlayView.swift; sourceTree = "<group>"; };
-		73C72E8309D300339FEE5603 /* Pods-BeautyContest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeautyContest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BeautyContest/Pods-BeautyContest.debug.xcconfig"; sourceTree = "<group>"; };
-		89BC08BE1EA38103DF9F84E6 /* Pods-BeautyContest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeautyContest.release.xcconfig"; path = "Pods/Target Support Files/Pods-BeautyContest/Pods-BeautyContest.release.xcconfig"; sourceTree = "<group>"; };
-		FB284C4A3215D89388D93313 /* Pods_BeautyContest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BeautyContest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,7 +31,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				44FF3A465BCD863F8D1D9CAF /* Pods_BeautyContest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -47,8 +42,6 @@
 			children = (
 				3B4F96881ED1DB9100B57C79 /* BeautyContest */,
 				3B4F96871ED1DB9100B57C79 /* Products */,
-				E1281C29117E449E133AF7A0 /* Pods */,
-				C10A8B5FA14ABB32F19E08B2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,23 +67,6 @@
 			path = BeautyContest;
 			sourceTree = "<group>";
 		};
-		C10A8B5FA14ABB32F19E08B2 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				FB284C4A3215D89388D93313 /* Pods_BeautyContest.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		E1281C29117E449E133AF7A0 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				73C72E8309D300339FEE5603 /* Pods-BeautyContest.debug.xcconfig */,
-				89BC08BE1EA38103DF9F84E6 /* Pods-BeautyContest.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -98,12 +74,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3B4F96981ED1DB9100B57C79 /* Build configuration list for PBXNativeTarget "BeautyContest" */;
 			buildPhases = (
-				23BF1124AACA1880634E2306 /* [CP] Check Pods Manifest.lock */,
 				3B4F96821ED1DB9100B57C79 /* Sources */,
 				3B4F96831ED1DB9100B57C79 /* Frameworks */,
 				3B4F96841ED1DB9100B57C79 /* Resources */,
-				5A30C50B40C75B7F28333A52 /* [CP] Embed Pods Frameworks */,
-				A6168D01F99FC35A59FC1676 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -160,54 +133,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		23BF1124AACA1880634E2306 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		5A30C50B40C75B7F28333A52 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BeautyContest/Pods-BeautyContest-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		A6168D01F99FC35A59FC1676 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BeautyContest/Pods-BeautyContest-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3B4F96821ED1DB9100B57C79 /* Sources */ = {
@@ -339,7 +264,6 @@
 		};
 		3B4F96991ED1DB9100B57C79 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 73C72E8309D300339FEE5603 /* Pods-BeautyContest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = "";
@@ -347,13 +271,12 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.nimomeng.and.his.friends.BeautyContest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
 		3B4F969A1ED1DB9100B57C79 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 89BC08BE1EA38103DF9F84E6 /* Pods-BeautyContest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = "";
@@ -361,7 +284,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.nimomeng.and.his.friends.BeautyContest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};

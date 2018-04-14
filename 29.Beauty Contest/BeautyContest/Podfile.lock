@@ -1,0 +1,18 @@
+PODS:
+  - Koloda (4.3.1):
+    - pop (~> 1.0)
+  - pop (1.0.10)
+  - SnapKit (4.0.0)
+
+DEPENDENCIES:
+  - Koloda (~> 4.3.0)
+  - SnapKit (~> 4.0)
+
+SPEC CHECKSUMS:
+  Koloda: 0d39b2aa188ccd1fac48d752acaf9802e683c625
+  pop: 82ca6b068ce9278fd350fd9dd09482a0ce9492e6
+  SnapKit: a42d492c16e80209130a3379f73596c3454b7694
+
+PODFILE CHECKSUM: 87b279acf829df97e86b534bbd9c3343a41e7e4f
+
+COCOAPODS: 1.2.0
