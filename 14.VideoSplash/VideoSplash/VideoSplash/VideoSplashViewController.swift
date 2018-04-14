@@ -62,11 +62,11 @@ public class VideoSplashViewController: UIViewController {
         didSet {
             switch fillMode {
             case .Resize:
-                moviePlayer.videoGravity = AVLayerVideoGravityResize
+                moviePlayer.videoGravity = AVLayerVideoGravity.resize.rawValue
             case .ResizeAspect:
-                moviePlayer.videoGravity = AVLayerVideoGravityResizeAspect
+                moviePlayer.videoGravity = AVLayerVideoGravity.resizeAspect.rawValue
             case .ResizeAspectFill:
-                moviePlayer.videoGravity = AVLayerVideoGravityResizeAspectFill
+                moviePlayer.videoGravity = AVLayerVideoGravity.resizeAspectFill.rawValue
             }
         }
     }
@@ -102,7 +102,7 @@ public class VideoSplashViewController: UIViewController {
         super.didReceiveMemoryWarning()
     }
     
-    func playerItemDidReachEnd() {
+    @objc func playerItemDidReachEnd() {
         moviePlayer.player?.seek(to: kCMTimeZero)
         moviePlayer.player?.play()
     }

@@ -40,7 +40,7 @@ public class VideoCutter: NSObject {
             if let exportSession = exportSession as AVAssetExportSession? {
                 exportSession.outputURL = NSURL(fileURLWithPath: outputURL) as URL
                 exportSession.shouldOptimizeForNetworkUse = true
-                exportSession.outputFileType = AVFileTypeMPEG4
+                exportSession.outputFileType = AVFileType.mp4
                 let start = CMTimeMakeWithSeconds(Float64(startTime), 600)
                 let duration = CMTimeMakeWithSeconds(Float64(duration), 600)
                 let range = CMTimeRangeMake(start, duration)
