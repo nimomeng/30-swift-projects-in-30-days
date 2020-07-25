@@ -79,7 +79,7 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         self.navigationController?.pushViewController(detailVC, animated: true)
     }
     
-    func receivedNotification(sender:Notification) {
+    @objc func receivedNotification(sender:Notification) {
         let userInfo = sender.userInfo
         let index = Int(userInfo?["id"] as! String)
         let itemDic = dataSource[index!]

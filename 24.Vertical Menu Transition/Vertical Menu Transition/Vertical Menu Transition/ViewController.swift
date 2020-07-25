@@ -23,7 +23,7 @@ class ViewController: UIViewController,CustomTransitionDelegate,UIViewController
         super.didReceiveMemoryWarning()
     }
 
-    func triggerMenu() {
+    @objc func triggerMenu() {
         let menuViewController = MenuViewController()
         menuViewController.transitioningDelegate = self
         menuViewController.modalPresentationStyle = .custom

@@ -28,7 +28,7 @@ class ViewController: UIViewController,WCSessionDelegate {
         generateNumberBtn.layer.borderWidth = 1
         generateNumberBtn.layer.cornerRadius = 8
         
-        wcsession = WCSession.default()
+        wcsession = WCSession.default
         if WCSession.isSupported() {
             wcsession.delegate = self
             wcsession.activate()
@@ -42,7 +42,7 @@ class ViewController: UIViewController,WCSessionDelegate {
         // Dispose of any resources that can be recreated.
     }
     
-    func generateNumber() {
+    @objc func generateNumber() {
         let number:Int = Int(arc4random()) % 5 + 1
         do {
             try wcsession.updateApplicationContext(["numberToBeGuessed": number])

@@ -35,7 +35,7 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         super.didReceiveMemoryWarning()
     }
     
-    func addTodoList() {
+    @objc func addTodoList() {
         let alertController = UIAlertController(title: "Add New Todo Item", message: "", preferredStyle:.alert)
         let confirmAction = UIAlertAction(title: "Confirm", style: UIAlertActionStyle.default, handler: ({
             (_) in

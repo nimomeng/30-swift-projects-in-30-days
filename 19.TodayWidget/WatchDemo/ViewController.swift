@@ -88,7 +88,7 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    func startHandler(){
+    @objc func startHandler(){
         self.timer = Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true) { (Timer) in
             self.lableNumber = self.lableNumber + 0.1
            
@@ -97,13 +97,13 @@ class ViewController: UIViewController {
         self.timer.fire()
     }
     
-    func stopHandler(){
+    @objc func stopHandler(){
         guard let timerForDistory = self.timer
             else {return}
         timerForDistory.invalidate()
     }
     
-    func resetHandler(){
+    @objc func resetHandler(){
         self.lableNumber = 0
         self.result.text = "0"
     }

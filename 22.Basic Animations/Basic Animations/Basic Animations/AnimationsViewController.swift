@@ -34,7 +34,7 @@ class PositionAnimationViewController: UIViewController {
         super.didReceiveMemoryWarning()
     }
     
-    func fire() {
+    @objc func fire() {
         let bulletView = UIView()
         bulletView.backgroundColor = UIColor.green
         bulletView.frame.size = CGSize(width: 10, height: 10)

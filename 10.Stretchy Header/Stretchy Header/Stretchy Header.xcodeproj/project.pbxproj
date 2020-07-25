@@ -12,26 +12,7 @@
 		3B263E7E1ED5C9AD00D92254 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B263E7C1ED5C9AD00D92254 /* Main.storyboard */; };
 		3B263E801ED5C9AD00D92254 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B263E7F1ED5C9AD00D92254 /* Assets.xcassets */; };
 		3B263E831ED5C9AD00D92254 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B263E811ED5C9AD00D92254 /* LaunchScreen.storyboard */; };
-		3B263E8E1ED5C9AD00D92254 /* Stretchy_HeaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B263E8D1ED5C9AD00D92254 /* Stretchy_HeaderTests.swift */; };
-		3B263E991ED5C9AD00D92254 /* Stretchy_HeaderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B263E981ED5C9AD00D92254 /* Stretchy_HeaderUITests.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		3B263E8A1ED5C9AD00D92254 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 3B263E6D1ED5C9AD00D92254 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 3B263E741ED5C9AD00D92254;
-			remoteInfo = "Stretchy Header";
-		};
-		3B263E951ED5C9AD00D92254 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 3B263E6D1ED5C9AD00D92254 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 3B263E741ED5C9AD00D92254;
-			remoteInfo = "Stretchy Header";
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		3B263E751ED5C9AD00D92254 /* Stretchy Header.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Stretchy Header.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -41,30 +22,10 @@
 		3B263E7F1ED5C9AD00D92254 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3B263E821ED5C9AD00D92254 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3B263E841ED5C9AD00D92254 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3B263E891ED5C9AD00D92254 /* Stretchy HeaderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Stretchy HeaderTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3B263E8D1ED5C9AD00D92254 /* Stretchy_HeaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stretchy_HeaderTests.swift; sourceTree = "<group>"; };
-		3B263E8F1ED5C9AD00D92254 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3B263E941ED5C9AD00D92254 /* Stretchy HeaderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Stretchy HeaderUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3B263E981ED5C9AD00D92254 /* Stretchy_HeaderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stretchy_HeaderUITests.swift; sourceTree = "<group>"; };
-		3B263E9A1ED5C9AD00D92254 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		3B263E721ED5C9AD00D92254 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3B263E861ED5C9AD00D92254 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3B263E911ED5C9AD00D92254 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -78,8 +39,6 @@
 			isa = PBXGroup;
 			children = (
 				3B263E771ED5C9AD00D92254 /* Stretchy Header */,
-				3B263E8C1ED5C9AD00D92254 /* Stretchy HeaderTests */,
-				3B263E971ED5C9AD00D92254 /* Stretchy HeaderUITests */,
 				3B263E761ED5C9AD00D92254 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -88,8 +47,6 @@
 			isa = PBXGroup;
 			children = (
 				3B263E751ED5C9AD00D92254 /* Stretchy Header.app */,
-				3B263E891ED5C9AD00D92254 /* Stretchy HeaderTests.xctest */,
-				3B263E941ED5C9AD00D92254 /* Stretchy HeaderUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -105,24 +62,6 @@
 				3B263E841ED5C9AD00D92254 /* Info.plist */,
 			);
 			path = "Stretchy Header";
-			sourceTree = "<group>";
-		};
-		3B263E8C1ED5C9AD00D92254 /* Stretchy HeaderTests */ = {
-			isa = PBXGroup;
-			children = (
-				3B263E8D1ED5C9AD00D92254 /* Stretchy_HeaderTests.swift */,
-				3B263E8F1ED5C9AD00D92254 /* Info.plist */,
-			);
-			path = "Stretchy HeaderTests";
-			sourceTree = "<group>";
-		};
-		3B263E971ED5C9AD00D92254 /* Stretchy HeaderUITests */ = {
-			isa = PBXGroup;
-			children = (
-				3B263E981ED5C9AD00D92254 /* Stretchy_HeaderUITests.swift */,
-				3B263E9A1ED5C9AD00D92254 /* Info.plist */,
-			);
-			path = "Stretchy HeaderUITests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,42 +84,6 @@
 			productReference = 3B263E751ED5C9AD00D92254 /* Stretchy Header.app */;
 			productType = "com.apple.product-type.application";
 		};
-		3B263E881ED5C9AD00D92254 /* Stretchy HeaderTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 3B263EA01ED5C9AD00D92254 /* Build configuration list for PBXNativeTarget "Stretchy HeaderTests" */;
-			buildPhases = (
-				3B263E851ED5C9AD00D92254 /* Sources */,
-				3B263E861ED5C9AD00D92254 /* Frameworks */,
-				3B263E871ED5C9AD00D92254 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				3B263E8B1ED5C9AD00D92254 /* PBXTargetDependency */,
-			);
-			name = "Stretchy HeaderTests";
-			productName = "Stretchy HeaderTests";
-			productReference = 3B263E891ED5C9AD00D92254 /* Stretchy HeaderTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		3B263E931ED5C9AD00D92254 /* Stretchy HeaderUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 3B263EA31ED5C9AD00D92254 /* Build configuration list for PBXNativeTarget "Stretchy HeaderUITests" */;
-			buildPhases = (
-				3B263E901ED5C9AD00D92254 /* Sources */,
-				3B263E911ED5C9AD00D92254 /* Frameworks */,
-				3B263E921ED5C9AD00D92254 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				3B263E961ED5C9AD00D92254 /* PBXTargetDependency */,
-			);
-			name = "Stretchy HeaderUITests";
-			productName = "Stretchy HeaderUITests";
-			productReference = 3B263E941ED5C9AD00D92254 /* Stretchy HeaderUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -195,16 +98,6 @@
 						CreatedOnToolsVersion = 8.3.2;
 						ProvisioningStyle = Automatic;
 					};
-					3B263E881ED5C9AD00D92254 = {
-						CreatedOnToolsVersion = 8.3.2;
-						ProvisioningStyle = Automatic;
-						TestTargetID = 3B263E741ED5C9AD00D92254;
-					};
-					3B263E931ED5C9AD00D92254 = {
-						CreatedOnToolsVersion = 8.3.2;
-						ProvisioningStyle = Automatic;
-						TestTargetID = 3B263E741ED5C9AD00D92254;
-					};
 				};
 			};
 			buildConfigurationList = 3B263E701ED5C9AD00D92254 /* Build configuration list for PBXProject "Stretchy Header" */;
@@ -212,6 +105,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -221,8 +115,6 @@
 			projectRoot = "";
 			targets = (
 				3B263E741ED5C9AD00D92254 /* Stretchy Header */,
-				3B263E881ED5C9AD00D92254 /* Stretchy HeaderTests */,
-				3B263E931ED5C9AD00D92254 /* Stretchy HeaderUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -238,20 +130,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3B263E871ED5C9AD00D92254 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3B263E921ED5C9AD00D92254 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -264,36 +142,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3B263E851ED5C9AD00D92254 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3B263E8E1ED5C9AD00D92254 /* Stretchy_HeaderTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3B263E901ED5C9AD00D92254 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3B263E991ED5C9AD00D92254 /* Stretchy_HeaderUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		3B263E8B1ED5C9AD00D92254 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 3B263E741ED5C9AD00D92254 /* Stretchy Header */;
-			targetProxy = 3B263E8A1ED5C9AD00D92254 /* PBXContainerItemProxy */;
-		};
-		3B263E961ED5C9AD00D92254 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 3B263E741ED5C9AD00D92254 /* Stretchy Header */;
-			targetProxy = 3B263E951ED5C9AD00D92254 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		3B263E7C1ED5C9AD00D92254 /* Main.storyboard */ = {
@@ -436,60 +285,6 @@
 			};
 			name = Release;
 		};
-		3B263EA11ED5C9AD00D92254 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = "Stretchy HeaderTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.nimomeng.and.his.friends.Stretchy-HeaderTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Stretchy Header.app/Stretchy Header";
-			};
-			name = Debug;
-		};
-		3B263EA21ED5C9AD00D92254 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = "Stretchy HeaderTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.nimomeng.and.his.friends.Stretchy-HeaderTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Stretchy Header.app/Stretchy Header";
-			};
-			name = Release;
-		};
-		3B263EA41ED5C9AD00D92254 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				INFOPLIST_FILE = "Stretchy HeaderUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.nimomeng.and.his.friends.Stretchy-HeaderUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_TARGET_NAME = "Stretchy Header";
-			};
-			name = Debug;
-		};
-		3B263EA51ED5C9AD00D92254 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				INFOPLIST_FILE = "Stretchy HeaderUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.nimomeng.and.his.friends.Stretchy-HeaderUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_TARGET_NAME = "Stretchy Header";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -507,24 +302,6 @@
 			buildConfigurations = (
 				3B263E9E1ED5C9AD00D92254 /* Debug */,
 				3B263E9F1ED5C9AD00D92254 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		3B263EA01ED5C9AD00D92254 /* Build configuration list for PBXNativeTarget "Stretchy HeaderTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				3B263EA11ED5C9AD00D92254 /* Debug */,
-				3B263EA21ED5C9AD00D92254 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		3B263EA31ED5C9AD00D92254 /* Build configuration list for PBXNativeTarget "Stretchy HeaderUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				3B263EA41ED5C9AD00D92254 /* Debug */,
-				3B263EA51ED5C9AD00D92254 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

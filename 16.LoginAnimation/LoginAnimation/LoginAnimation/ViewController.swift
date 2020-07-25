@@ -35,7 +35,7 @@ class ViewController: UIViewController {
         signupButton.backgroundColor = UIColor(red: 42/255.0, green: 183/255.0, blue: 90/255.0, alpha: 1)
         self.view.addSubview(signupButton)
     }
-    func loginAction() {
+    @objc func loginAction() {
         let loginVC = LoginViewController()
         self.navigationController?.pushViewController(loginVC, animated: false)
     }

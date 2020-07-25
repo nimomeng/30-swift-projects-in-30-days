@@ -56,9 +56,9 @@ class ViewController: UIViewController,UICollectionViewDelegate,UICollectionView
         
 //        for segment View
         let segmentView = UISegmentedControl(items: ["FlowLayout","CustomLayout"])
-        let titleTextAttributes = [NSForegroundColorAttributeName : UIColor.white as AnyObject]
+        let titleTextAttributes = [NSAttributedStringKey.foregroundColor : UIColor.white as AnyObject]
         segmentView.setTitleTextAttributes(titleTextAttributes, for: UIControlState.normal)
-        segmentView.setTitleTextAttributes([NSForegroundColorAttributeName : UIColor.black as AnyObject], for: UIControlState.selected)
+        segmentView.setTitleTextAttributes([NSAttributedStringKey.foregroundColor : UIColor.black as AnyObject], for: UIControlState.selected)
         segmentView.tintColor = UIColor.white
         segmentView.isMomentary = false
         segmentView.frame = CGRect(x:10, y:50, width:(self.view.frame.width)-20, height:segmentView.bounds.height)
@@ -69,7 +69,7 @@ class ViewController: UIViewController,UICollectionViewDelegate,UICollectionView
         
     }
 
-    func action_segmentValueChanged(sender:UISegmentedControl) {
+    @objc func action_segmentValueChanged(sender:UISegmentedControl) {
         let layout = sender.selectedSegmentIndex == 0 ? UICollectionViewFlowLayout() : CustomCollectionViewLayout()
         layout.scrollDirection = .horizontal
         collectionView.collectionViewLayout = layout

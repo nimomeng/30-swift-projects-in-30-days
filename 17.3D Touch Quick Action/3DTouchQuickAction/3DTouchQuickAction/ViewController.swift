@@ -39,7 +39,7 @@ class ViewController: UIViewController,UIViewControllerPreviewingDelegate {
         actionLabel.text = name
     }
     
-    func shortCutActionClicked(sender:Notification) {
+    @objc func shortCutActionClicked(sender:Notification) {
         let shortcutItem = sender.userInfo?["shortcutItem"] as! UIApplicationShortcutItem
         if shortcutItem.type == "LoveItem" {
             self.changeLabel(with: "Yes, I do ❤️ you!")
