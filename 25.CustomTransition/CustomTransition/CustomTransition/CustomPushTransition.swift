@@ -34,7 +34,6 @@ class CustomPushTransition: NSObject,UIViewControllerAnimatedTransitioning {
             fromVC.view.alpha = 0
             toVC.view.alpha = 1
         }) { (finish) in
-            snapshotView?.frame = toVC.bannerImageView.frame
             fromVC.selectedCell.imageView.isHidden = false
             toVC.bannerImageView.image = toVC.img
             snapshotView?.removeFromSuperview()
@@ -42,5 +41,4 @@ class CustomPushTransition: NSObject,UIViewControllerAnimatedTransitioning {
             transitionContext.completeTransition(true)
         }
     }
-
 }
