@@ -70,7 +70,7 @@ class ViewController: UIViewController,UITextViewDelegate {
         UIView.animate(withDuration: duration) {
 //            键盘弹出
             if margin > 0 {
-                self.allowInputNumberLabel.frame.origin.y = self.allowInputNumberLabel.frame.origin.y - margin
+                self.allowInputNumberLabel.frame.origin.y = self.view.frame.height - 40 - margin
             }
 //            键盘收起
             else {
